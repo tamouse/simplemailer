@@ -19,16 +19,16 @@ The Git way:
 * $INSTALLDIR/simplemailer.yml
 * $HOME/.simplemailer.yml
 
-	---
-	sendmail: /usr/sbin/sendmail
-	sendmail_opts:
+    ---
+    sendmail: /usr/sbin/sendmail
+    sendmail_opts:
 
 
 == Usage
 
-simplemailer [options] addressees...
+    simplemailer [options] addressees...
 
-options:
+=== options:
 
     -s|--subject    email subject
     -f|--from       sender email, defaults to $USER@localhost
@@ -36,12 +36,12 @@ options:
     -V|--version    version of simplemailer
     -h|--help       show a little help
 
-addressees are the recipients' e-mail addresses.
+`addressees` are the recipients' e-mail addresses.
 
 == Author
 
-Tamara Temple &lt;tamara@tamaratemple.com&gt;
+Tamara Temple <tamara@tamaratemple.com>
 
 == Links
 
-repo: [Github](https://github.com/tamouse/simplemailer)
+repo:: https://github.com/tamouse/simplemailer
