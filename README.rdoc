@@ -16,8 +16,8 @@ The Git way:
 
 == Configuration
 
-* $INSTALLDIR/simplemailer.yml
-* $HOME/.simplemailer.yml
+* $INSTALLDIR/simplemailer.yml -- system-wide configuration
+* $HOME/.simplemailer.yml -- per-user configuration
 
     ---
     sendmail: /usr/sbin/sendmail
