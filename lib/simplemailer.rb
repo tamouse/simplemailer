@@ -1,5 +1,11 @@
 require "simplemailer/version"
 
-module Simplemailer
-  # Your code goes here...
+module SimpleMailer
+  def run
+    # configure
+    # create_mail
+    # deliver_mail
+  end
+
+  module_function :run
 end

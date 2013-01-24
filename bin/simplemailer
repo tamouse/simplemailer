@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+=begin
+
+Simple Mailer provides a quick and easy way to send emails
+from the command line, without having to install a package
+that brings in postfix (I'm looking at you, bsd-mailx and 
+mailutils!!).
+
+Author:: Tamara Temple <tamara@tamaratemple.com>
+Copyright:: Tamara Temple Web Development
+License:: MIT
+
+=end
+
+require 'simplemailer'
+SimpleMailer.run
