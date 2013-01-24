@@ -1,0 +1,47 @@
+= simplemailer
+
+A simple command-line emailer that works like the old unix mail(1) utility
+but without requiring a package install of postfix or other huge MTA.
+
+== Installation
+
+The usual way:
+
+    gem install simplemailer
+
+The Git way:
+
+    git clone git://github.com/tamouse/simplemailer.git
+
+
+== Configuration
+
+$INSTALLDIR/simplemailer.yml
+$HOME/.simplemailer.yml
+
+---
+sendmail: /usr/sbin/sendmail
+sendmail_opts:
+
+
+== Usage
+
+simplemailer [options] addressees...
+
+options:
+
+    -s|--subject    email subject
+    -f|--from       sender email, defaults to $USER@localhost
+    -v|--verbose    be chatty about things
+    -V|--version    version of simplemailer
+    -h|--help       show a little help
+
+addressees are the recipients' e-mail addresses.
+
+== Author
+
+Tamara Temple &lt;tamara@tamaratemple.com&gt;
+
+== Links
+
+repo: [Github](https://github.com/tamouse/simplemailer)
