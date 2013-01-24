@@ -1,0 +1,3 @@
+module Simplemailer
+  VERSION = "0.0.1"
+end
