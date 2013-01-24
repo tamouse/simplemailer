@@ -26,17 +26,27 @@ The Git way:
 
 == Usage
 
-    simplemailer [options] addressees...
+    simplemailer [options] addressees... < message.txt
 
 === options:
 
     -s|--subject    email subject
     -f|--from       sender email, defaults to $USER@localhost
+    -m|--message="message"  the message body is taken from the parameter value
     -v|--verbose    be chatty about things
     -V|--version    version of simplemailer
     -h|--help       show a little help
 
 `addressees` are the recipients' e-mail addresses.
+
+The message body is read from STDIN.
+
+== Examples
+
+    some_cron_job | simplemailer -s 'Output from some_cron_job' root@localhost
+
+    long_running_job ; simplemailer -s "Long running job is complete" \
+      -m "Completed at $(date) with result $!" walter@example.com 
 
 == Author
 
